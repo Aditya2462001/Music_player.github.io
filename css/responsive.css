@@ -12,6 +12,20 @@
 
 
 }
+@media only screen and (max-width:383px)
+{
+     .UlList
+     {
+         max-height: 350px;
+
+     }
+     .Slide_bar
+     {
+         width: 100%;
+     }
+
+
+}
 @media only screen and (max-width:320px)
 {
      .UlList
@@ -21,7 +35,7 @@
      }
      .Slide_bar
      {
-         width: 320px;
+         width: 100%;
      }
 
 

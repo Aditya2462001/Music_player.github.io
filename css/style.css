@@ -327,7 +327,6 @@ body
  .Slide_bar
  {
      width: 300px;
-     height: 100%;
      position: absolute;
      right: 0;
      top: 0;
@@ -504,7 +503,7 @@ body
      display: flex;
      justify-content: center;
      text-align: center;
-     margin-top: 1rem;
+     margin-top: 2rem;
      font-size: 12px;
 
  }
