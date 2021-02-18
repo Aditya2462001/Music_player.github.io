@@ -1,0 +1,515 @@
+*
+{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body
+{
+   background:rgba(0, 0, 0, 0.226);
+   transition: all 0.5s;
+   font-family: 'Poppins', sans-serif;
+}
+.SongCard
+{
+    background-color: #333;
+    color: white;
+    width:300px;
+    height: 550px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 20px;
+    border-radius: 10px;
+     box-shadow: 3px 3px 10px rgb(112, 138, 221),
+        3px 3px 10px rgba(96, 159, 231, 0.596),
+        4px 5px 15px rgba(109, 219, 252, 0.808),
+        3px 3px 9px rgba(151, 197, 240, 0.267),
+        4px 4px 10px rgba(120, 163, 243, 0.445),
+        -3px -3px 10px rgba(105, 192, 243, 0.253);
+}
+.color_play 
+{
+    animation: color1 2s linear infinite;
+}
+@keyframes color1
+{
+     0%
+    {
+        box-shadow: 0px 0px 10px rgb(216, 64, 64),
+                0px 0px 20px rgba(238, 79, 79, 0.596),
+                0px 0px 30px rgba(231, 105, 105, 0.808),
+                0px 0px 40px rgba(219, 134, 134, 0.267);
+
+    }
+    20%
+    {
+        box-shadow: 0px 0px 10px rgb(17, 66, 228),
+        0px 0px 10px rgba(96, 159, 231, 0.596),
+        0px 0px 15px rgba(109, 219, 252, 0.808),
+        0px 0px 20px rgba(151, 197, 240, 0.267);
+        
+    }
+    50%
+    {
+        box-shadow: 0px 0px 10px rgb(94, 250, 63),
+                0px 0px 20px rgba(124, 216, 102, 0.596),
+                0px 0px 30px rgba(178, 224, 126, 0.808),
+                0px 0px 40px rgba(156, 226, 124, 0.267);
+
+    }
+    100%
+    {
+          box-shadow: 0px 0px 10px rgb(216, 64, 64),
+                0px 0px 20px rgba(238, 79, 79, 0.596),
+                0px 0px 30px rgba(231, 105, 105, 0.808),
+                0px 0px 49px rgba(219, 134, 134, 0.267);
+
+    }
+}
+.top-part
+{
+    display:flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.heading h1
+{
+    text-align: center;
+    font-size: 20px;
+    padding-bottom: -21px;
+    color: white;
+    position: relative;
+    box-sizing: border-box;
+}
+.heading h1::before
+{
+    content: "";
+    position: absolute;
+    top: 98%;
+    left: 14.5%;
+    height: 2.5px;
+    width: 80px;
+    background:  white;
+    border-radius:10px 0px 10px 0px;
+}
+.bars i
+{
+    font-size: 22px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.bars i:hover
+{
+    color: rgb(94, 131, 250);
+}
+
+/*       bottom-part       */
+
+
+.bottom-part
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+            
+}
+.songNameDiv
+{
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 25px;
+    position: relative;
+}
+.songName
+{
+    padding: 10px 30px;
+    padding-bottom: 5px;
+    position: relative;
+    cursor: pointer;
+    width: 100%;
+    
+}
+.songNameDiv::before
+{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 15%;
+    height: 2px;
+    width: 70%;
+    background: white;
+    transition: all 0.5s linear;
+    border-radius: 20px;
+}
+.songLogo
+{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+   transition: all 0.5s ;
+}
+.songLogo img
+{
+    margin-top: 10px;
+    border-radius: 50%;
+    margin-right: 2%;
+    width: 200px;
+    height: 200px;
+    box-shadow: 1px 1px 5px rgb(45, 144, 236),
+                -1px -1px 5px rgb(45, 144, 236),
+                2px 2px 10px rgba(55, 163, 145, 0.7),
+                -2px -2px 10px rgba(55, 163, 145, 0.7),
+                5px 5px 20px rgba(33, 112, 216, 0.562),
+                -5px -5px 20px rgba(33, 112, 216, 0.562);
+    position: relative;
+    
+}
+.songLogo .songImg
+{
+    transition: all 0.5s ease-in-out ;
+    animation: rotating 1.5s infinite linear;
+    animation-delay: .5s;
+}
+@keyframes rotating
+{
+    0%
+    {
+        transform: rotate(0deg);
+        box-shadow: 0px 0px 10px rgb(216, 64, 64),
+                0px 0px 20px rgba(238, 79, 79, 0.596),
+                0px 0px 30px rgba(231, 105, 105, 0.808),
+                0px 0px 9px rgba(219, 134, 134, 0.267),
+                0px 0px 10px rgba(228, 117, 117, 0.445);
+
+    }
+    20%
+    {
+        box-shadow: 0px 0px 10px rgb(17, 66, 228),
+        0px 0px 10px rgba(96, 159, 231, 0.596),
+        0px 0px 15px rgba(109, 219, 252, 0.808),
+        0px 0px 20px rgba(151, 197, 240, 0.267);
+        
+    }
+    50%
+    {
+        box-shadow: 0px 0px 10px rgb(94, 250, 63),
+                0px 0px 20px rgba(124, 216, 102, 0.596),
+                0px 0px 30px rgba(178, 224, 126, 0.808),
+                0px 0px 40px rgba(156, 226, 124, 0.267);
+
+    }
+    100%
+    {
+          transform: rotate(360deg);
+          box-shadow: 0px 0px 10px rgb(216, 64, 64),
+                0px 0px 20px rgba(238, 79, 79, 0.596),
+                0px 0px 30px rgba(231, 105, 105, 0.808),
+                0px 0px 49px rgba(219, 134, 134, 0.267);
+
+    }
+}
+.progress-bar
+{
+    width:95%;
+    margin-top:25px;
+    display: flex;
+    justify-content: center;
+    margin-left: 5px;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.progress
+{
+    width: 100%;
+    margin-top: 5px;
+    height: 7px;
+    border-radius: 34px;
+    background-color: white;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.7),
+                0px 4px 8px rgba(0,0,0,0.7),
+                0px 8px 16px rgba(0,0,0,0.07),
+                0px 16px 32px rgba(0,0,0,0.07),
+                0px 32px 64px rgba(0,0,0,0.07);
+    position: relative;
+    cursor: pointer;
+    transition:all 0.5s;
+}
+.pro
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 0%;
+    background-color: rgb(37, 127, 245);
+    border-radius: 34px;
+    transition:all  1s linear;
+}
+.pro::before
+{
+    content: "";
+    position: absolute;
+    top: -2px;
+    right: -5px;
+    border-radius: 50%;
+    height: 11px;
+    width: 11px;
+    background:rgb(47, 153, 240);
+    box-shadow: 2px 2px 5px rgb(47, 153, 240),-2px -2px 5px rgb(47, 153, 240);
+    transition-delay: -0.5s ;
+}
+ .time
+ {
+     display: flex;
+     position: relative;
+     justify-content: space-between;
+     margin-left: 0px;
+     font-weight: bold;
+     font-size: 11px;
+     letter-spacing: 1px;
+     padding: 5px 0px;
+     letter-spacing: 0.5px;
+     
+ }
+ .AllBtn
+ {
+     display: flex;
+     justify-content: space-around;
+ }
+ .AllBtn button
+ {
+     border: none;
+     padding: 10px;
+     outline:none;
+     cursor:pointer;
+     transition: all 0.5s ;
+     background-color: transparent;
+     color: white;
+     
+ }
+ .AllBtn button i
+ {
+    font-size: 20px;
+
+ }
+ .AllBtn button:hover
+ {
+     color: rgb(88, 159, 240);
+    
+ }
+ .AllBtn .playBtn
+ {
+     background: rgba(0,0,0,0.9);
+     color: white;
+     border-radius: 50%;
+     padding: 15px;
+     padding-left: 16px;
+ }
+ .AllBtn .playBtn:hover
+ {
+    background: rgba(0,0,0,0.7);
+ }
+
+ /*------------------- right part --------------------*/
+
+ .Slide_bar
+ {
+     width: 300px;
+     height: 100%;
+     position: absolute;
+     right: 0;
+     top: 0;
+     background-color: #333;
+     color: white;
+     transform-origin:right;
+ }
+ .close_side_bar
+ {
+     transform: scale(0);
+     transform-origin:right;
+ }
+ .song_list_heading_cont
+ {
+     margin-top:20px;
+     display:flex;
+     justify-content:space-around;
+     width: 100%;
+ }
+ .close_bar
+ {
+     width: 10%;
+     background-color: blue;
+     border-radius: 5px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-size: 20px;
+     margin-left: 10px;
+     cursor: pointer;
+ }
+.close_bar i
+ {
+     transition: all 0.5s;
+ }
+.close_bar i:hover
+ {
+     
+    color: black;
+ }
+
+.song_list_heading_cont .song_list_heading 
+  {
+      width: 90%;
+
+  }
+  .song_list_heading_cont .song_list_heading h2
+ {
+     margin-left: 50px;
+     text-transform:uppercase;
+ }
+ .UlList
+ {
+     margin-top: 10px;
+     width: 95%;
+     max-height: 420px;
+     overflow: auto;
+     margin-left: 10px;
+ }
+ .UlList::-webkit-scrollbar
+ {
+     width: 8px;
+     cursor: pointer;
+     border-radius: 20px;
+     box-shadow: 1px 1px 5px rgba(0,0,0,0.5),
+                  1px 1px 5px rgba(0,0,0,0.5);
+ }
+ .UlList::-webkit-scrollbar-track
+ {
+     background-color: white;
+     border-radius: 10px;
+     box-shadow: 0px 0px 5px rgba(150, 148, 148, 0.219);
+ }
+.UlList::-webkit-scrollbar-thumb
+{
+    background-color: black;
+    border-radius: 20px;
+    cursor:grab;
+   
+}
+ .UlList li
+ {
+    list-style: none;
+    cursor: pointer;
+    position: relative;
+    margin-left: 30px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 12px;
+    letter-spacing: .5px;
+    font-weight: bold;
+    color: white;
+ }
+ .UlList li::before
+ {
+     content: "";
+     position: absolute;
+     top: 12px;
+     left:-24px;
+     height: 23px;
+     width: 23px;
+     border-radius: 34px;
+     border: 1.5px solid white;
+     transition: all 0.5s;
+     box-sizing: border-box;
+ }
+ .UlList li::after
+ {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left:-16px;
+    height: 5px;
+    width: 5px;
+    /* border-radius: 50%; */
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+    transform: rotate(-45deg);
+    transition: all 0.5s;
+ }
+ .UlList li:hover::before
+ {
+     width: 100%;
+     transition-delay: 0.4s;
+
+ }
+ .UlList li:hover::after
+ {
+
+     left: -13px;
+     height: 7px;
+     width: 7px;
+     transition-delay: 0.3s;
+      border-right: 2px solid rgb(82, 150, 253);
+    border-bottom: 2px solid rgb(82, 150, 253);
+ }
+ .UlList li:hover
+ {
+     color: rgb(82, 150, 253);
+ }
+
+ .follow_icon 
+ {
+     width: 100%;
+ }
+ .follow_icon .follow_heading
+ {
+     text-align: center;
+     margin: 20px;
+ }
+
+ .follow_icon .icon_cont
+ {
+     display: flex;
+     justify-content: space-around;
+     margin: 10px;
+ }
+ .follow_icon .icon_cont a
+ {
+     text-decoration: none;
+     color: white;
+     transition: all 0.5s;
+ }
+ .follow_icon .icon_cont a:hover
+ {
+     color: rgb(74, 157, 252);
+ }
+ .follow_icon .icon_cont a i
+ {
+     font-size: 25px;
+ }
+ .footer
+ {
+     display: flex;
+     justify-content: center;
+     text-align: center;
+     margin-top: 1rem;
+     font-size: 12px;
+
+ }
+ .footer p a
+{
+    text-decoration: none;
+    color: rgb(78, 182, 252);
+}

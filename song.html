@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <script src="https://kit.fontawesome.com/8e821e60b4.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="icon" href="./images/logo/loading.svg" rel="icon/image">
+</head>
+
+<body>
+    <section class="SongCard ">
+        <div class="top-part">
+            <div class="heading">
+                <h1>Music Player</h1>
+            </div>
+            <div class="bars">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+        <div class="bottom-part">
+            <div class="audioPlay">
+                <div class="songNameDiv">
+                    <marquee class="songName">Afreen Afreen - Album</marquee>
+                </div>
+                <div class="songLogo">
+                    <img src="./images/afreen_afreen.jpg" alt="" id="songImg">
+                </div>
+
+                <audio src="./Songs/Afreen Afreen .mp3" class="song"></audio>
+
+                <div class="progress-bar">
+                    <div class="progress">
+                        <div class="pro"></div>
+                    </div>
+                    <div class="time">
+                        <p class="currentTimeChange">0:00</p>
+                        <p class="totalTime">3:43</p>
+                    </div>
+                </div>
+                <div class="AllBtn">
+                    <button class="prvBtn"><i class="fa fa-fast-backward" aria-hidden="true"></i></button>
+                    <button class="playBtn"><i class="fa fa-play" aria-hidden="true" id="btnIcon"></i></button>
+                    <button class="nextBtn"><i class="fa fa-fast-forward" aria-hidden="true"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="Slide_bar close_side_bar">
+        <div class="songsList">
+            <div class="song_list_heading_cont">
+                <div class="close_bar">
+                    <i class="fas fa-times"></i>
+                </div>
+                <div class="song_list_heading">
+                    <h2>song list</h2>
+                </div>
+            </div>
+            <ul class="UlList"></ul>
+        </div>
+        <div class="follow_icon">
+            <div class="follow_heading">
+                <h2>Follow us</h2>
+            </div>
+            <div class="icon_cont">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+        <div class="footer">
+            <p>Create By <a href="#">Adicreation</a> and Distributed by <a href="#">Aditya Chandrikapure</a></p>
+
+        </div>
+    </div>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>

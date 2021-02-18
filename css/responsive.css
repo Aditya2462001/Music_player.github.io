@@ -1,0 +1,82 @@
+@media only screen and (max-width:1068px)
+{
+     .UlList
+     {
+         max-height: 320px;
+
+     }
+     .Slide_bar
+     {
+         width: 320px;
+     }
+
+
+}
+@media only screen and (max-width:320px)
+{
+     .UlList
+     {
+         max-height: 320px;
+
+     }
+     .Slide_bar
+     {
+         width: 320px;
+     }
+
+
+}
+@media only screen and (max-height:556px)
+{
+     .SongCard
+     {
+         top: 60%;
+     }
+
+
+}
+@media only screen and (max-height:455px)
+{
+     .SongCard
+     {
+         top: 70%;
+     }
+
+
+}
+@media only screen and (max-height:392px)
+{
+     .SongCard
+     {
+         top: 80%;
+     }
+
+
+}
+@media only screen and (max-height:344px)
+{
+     .SongCard
+     {
+         top: 90%;
+     }
+
+
+}
+@media only screen and (max-height:307px)
+{
+     .SongCard
+     {
+         top: 110%;
+     }
+
+
+}
+@media only screen and (max-height:254px)
+{
+     .SongCard
+     {
+         top: 130%;
+     }
+
+
+}
