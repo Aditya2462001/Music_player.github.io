@@ -56,7 +56,7 @@ const images = [
         id: 6,
         src: './images/ishq-di-baajiyaan.jpg',
         songSrc: './Songs/Ishq Di Baajiyaan.mp3',
-        songName: 'Faded - Album',
+        songName: 'Ishq Di Baajiyaan',
     },
     {
         id: 7,
